@@ -2,8 +2,14 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <style>
+        .choices__list--dropdown .choices__item {
+            text-align: left;
+        }
+    </style>
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
     <div class="container text-center">
@@ -14,14 +20,29 @@
                 <div class="mb-3">
                     <label for="inst" class="form-label">Select Your Institution:</label>
                     <select name="inst" id="inst" class="form-select">
+                        <option value="" selected>--- Select Institution ---</option>
                         {% for key, value in target_hosts.items() %}
                             <option value="{{ key }}">{{ value.name }}</option>
                         {% endfor %}
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
+                <div class="mb-3 form-check text-start mt-3">
+                    <input type="checkbox" class="form-check-input" id="remember" name="remember" value="savecookie" checked>
+                    <label class="form-check-label" for="remember">Remember me</label>
+                </div>
             </form>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Choices('#inst', {
+                searchEnabled: true,
+                itemSelectText: '',
+                placeholder: true,
+                searchPlaceholderValue: 'Type to search...'
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,22 +1,22 @@
 {
     "nalb": {
         "host": "https://nalb.au.reshare.indexdata.com",
-        "name": "Albury City Libraries"
-    },
-    "vcarm": {
-        "host": "https://vcarm.au.reshare.indexdata.com",
-        "name": "CARM Centre"
-    },
-    "vnmu": {
-        "host": "https://vnmu.au.reshare.indexdata.com",
-        "name": "Museums Victoria Library"
+        "name": "NALB - Albury City Libraries"
     },
     "qgu": {
         "host": "https://qgu.au.reshare.indexdata.com",
-        "name": "Queensland Griffith University"
+        "name": "QGU - Queensland Griffith University"
     },
     "tttc": {
         "host": "https://tttc.au.reshare.indexdata.com",
-        "name": "Test TTTA"
+        "name": "TTTC - Test TTTA"
+    },
+    "vcarm": {
+        "host": "https://vcarm.au.reshare.indexdata.com",
+        "name": "VCARM - CARM Centre"
+    },
+    "vnmu": {
+        "host": "https://vnmu.au.reshare.indexdata.com",
+        "name": "VNMU - Museums Victoria Library"
     }
 }
