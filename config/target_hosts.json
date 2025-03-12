@@ -1,0 +1,22 @@
+{
+    "nalb": {
+        "host": "https://nalb.au.reshare.indexdata.com",
+        "name": "Albury City Libraries"
+    },
+    "vcarm": {
+        "host": "https://vcarm.au.reshare.indexdata.com",
+        "name": "CARM Centre"
+    },
+    "vnmu": {
+        "host": "https://vnmu.au.reshare.indexdata.com",
+        "name": "Museums Victoria Library"
+    },
+    "qgu": {
+        "host": "https://qgu.au.reshare.indexdata.com",
+        "name": "Queensland Griffith University"
+    },
+    "tttc": {
+        "host": "https://tttc.au.reshare.indexdata.com",
+        "name": "Test TTTA"
+    }
+}
