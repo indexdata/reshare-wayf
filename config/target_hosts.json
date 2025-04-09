@@ -18,5 +18,9 @@
     "vnmu": {
         "host": "https://vnmu.au.reshare.indexdata.com",
         "name": "VNMU - Museums Victoria Library"
+    },
+    "east": {
+        "host": "https://east.reshare-dev.indexdata.com",
+        "name": "EAST - East Development"
     }
 }
